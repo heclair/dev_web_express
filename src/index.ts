@@ -11,10 +11,6 @@ const app = express();
 app.use(express.json());
 app.listen(PORT, function(){console.log(`Rodando ${PORT}`)});
 
-app.get("/somar/:x/:y", sum);
-app.post("/subtrair", dif);
-
-
 app.use(routes);
 
 app.use(function(req,res){
